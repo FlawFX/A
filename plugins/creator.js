@@ -20,17 +20,17 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
 let teksbio = `${htki} *BIODATA* ${htka}
-*ɴᴀᴍᴇ:* 𝕻𝖚𝖙
-*ᴀɢᴇ:* 15ᵗʰ
+*ɴᴀᴍᴇ:* Flawz
+*ᴀɢᴇ:* 17ᵗʰ
 
-*ʙɪʀᴛʜᴅᴀʏ:* 1 feb 2007
-*ᴀᴅᴅʀᴇss:* Indonesia, Jawa Barat, Bandung
+*ʙɪʀᴛʜᴅᴀʏ:* 10 Maret
+*ᴀᴅᴅʀᴇss:* Mars
 
 *- - sᴋɪʟʟs: - -* 
-> JavaScript [89.7%]
-> Python [13.4%]
-> CSS [5.1%]
-> Html [1.2%]
+> Turu [89.7%]
+> Makan [13.4%]
+> Berak [5.1%]
+> Kencing [1.2%]
 
 📷 *Instagram:* ${sig}
 🐈 *Github:* ${sgh}
@@ -60,7 +60,7 @@ const listMessage = {
   text: teks,
   footer: null,
   title: `${htki} *OWNER* ${htka}`,
-  buttonText: "Click Here !",
+  buttonText: "KLIK DISINI",
   sections
 }
 
