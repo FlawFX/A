@@ -241,7 +241,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 
 let usrs = db.data.users[m.sender]
 let tek = `*${ucapan()} ${conn.getName(m.sender)}*
-┏─── ⳹°❀❬ Nick Store ❭❀°
+┏─── ⳹°❀❬ %me ❭❀°
 │✎ _Aktif Selama:_ ${mpt}
 │✎ _Jam:_ ${moment.tz('Asia/Jakarta').format('HH')} H  ${moment.tz('Asia/Jakarta').format('mm')} M  ${moment.tz('Asia/Jakarta').format('ss')} S
 │✎ _User:_ ${Object.keys(global.db.data.users).length}
@@ -250,10 +250,10 @@ let tek = `*${ucapan()} ${conn.getName(m.sender)}*
 `
 const listMessage = {
   text: tek,
-  footer: '© by 𝕻𝖚𝖙 𝕯𝖊𝖛',
+  footer: '© 𝒁𝒆𝒏𝒏𝑺𝒌𝒚-𝑩𝒐𝒕𝒛',
   mentions: await conn.parseMention(tek),
   title: `${htki} *LIST MENU* ${htka}`,
-  buttonText: `CLICK HERE ⎙`,
+  buttonText: `KLIK DISINI ⎙`,
   sections
 }
   if (teks == '404') {
@@ -539,16 +539,16 @@ function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   let res = "Selamat DiniHari ☀️"
   if (time >= 4) {
-    res = "Good Morning 🌄"
+    res = "Selamat Pagi 🌄"
   }
   if (time >= 10) {
-    res = "Good Afternoon ☀️"
+    res = "Selamat Siang ☀️"
   }
   if (time >= 15) {
-    res = "Good Afternoon 🌇"
+    res = "Selamat Sore 🌇"
   }
   if (time >= 18) {
-    res = "Good Night 🌙"
+    res = "Selamat Malam 🌙"
   }
   return res
 }
